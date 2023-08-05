@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #navbar{
+            background-color: rgb(46, 55, 29);
+            height: 130px;
+        }
+        nav img{
+            position: sticky;
+            top: 50px;
+            left: 100px;
+        }
+        nav a{
+             padding-left: 30px;
+             text-decoration: none;
+             color: rgba(199, 199, 160, 0.911);
+             position: relative;
+             top: 40px;
+        }
+        #home_left{
+            padding-left: 100px;
+        }
+        #body_left{
+            height: 1000px;
+            width: 30%;
+            background-color: gainsboro;
+            float: left;
+        }
+        #body_right{
+            height: 1000px;
+            width: 70%;
+            background-color: gainsboro;
+            float: left;
+        }
+        .heading{
+            font-size: 30px;
+            position: relative;
+            top: 30px;
+            left: 30px;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: gray;
+            color: black;
+        }
+        #line{
+            display: block;
+            height: 200px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="./maneswin_logo.png" alt="">
+        <a href=""><span id="home_left"></span>HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">PRACTICES</a>
+        <a href="">OUR LAWYERS</a>
+        <a href="">NEWS</a>
+        <a href="">CONTACT</a>
+    </nav>
+    <div id="body_left">
+        <span class="heading">RECENT NEWS</span>
+        <hr id="line">
+    </div>
+    <div id="body_right"></div>
+</body>
+</html>
