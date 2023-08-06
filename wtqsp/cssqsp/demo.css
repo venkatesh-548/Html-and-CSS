@@ -1,0 +1,14 @@
+i{
+    color: brown;
+    font-size: 50px;
+}
+b{   
+    color: pink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+p{
+    color: yellow;
+    background-color: black;
+    font-style: oblique;
+}
