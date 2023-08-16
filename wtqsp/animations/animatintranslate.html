@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            animation: form 6s 5;
+            animation-direction: normal;
+        }
+        @keyframes form{
+            0%{
+                background-color: blue;
+                transform: translateX(500px);
+            }
+            25%{
+                background-color: rgb(212, 22, 22);
+                transform: translateY(300px);
+            }
+            75%{
+                background-color: navy;
+                transform: translateX(500px);
+            }
+            100%{
+                background-color: cyan;
+                transform: translateY(300);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

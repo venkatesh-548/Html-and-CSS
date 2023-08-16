@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-left: 100px;
+        }
+        #a{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            
+            border: 2px solid black;
+            transition: all 3s;
+        }
+        #b{
+            margin-top: 50px;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(226, 43, 186); 
+            transition: all 3s;
+
+        }
+        #d{
+            margin-top: 50px;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(43, 226, 128); 
+            transition: all 3s;
+
+        }
+        #c{
+            margin-top: 50px;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(61, 43, 226); 
+            transition: all 3s;
+
+        }
+        #a:hover{
+            transform:perspective(200px) rotateX(50deg);
+            transform: skew(30%);
+            
+            
+        }
+        #b:hover{
+            transform:perspective(200px) rotateY(50deg);
+        }
+        #c:hover{
+            /* transform:perspective(200px) rotateZ(50deg); */
+            transform: scale(1.2,1.2);
+            box-sizing: border-box;
+        }
+        #d:hover{
+            transform: translate(30%,40%);
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    <div id="d"></div>
+</body>
+</html>
