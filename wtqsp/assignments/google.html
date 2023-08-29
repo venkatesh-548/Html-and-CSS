@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .google{
+            display: inline-block;
+            position: relative;
+            top: 100px;
+            left: 300px;
+        }
+        div h1{
+            font-size: 50px;
+        }
+        .g{
+            display: inline-block;
+            color:green;
+            animation: jump 1s infinite;
+        }
+        @keyframes jump{
+            0%{
+                transform: scaleY(90px);
+                color: cyan;
+                position: relative;
+                top: -10px;
+            }
+            100%{
+                transform: scaleY(10px);
+            }
+        }
+        .o{
+            display: inline-block;
+            color: blue;
+            animation: jumpdown 1s infinite;
+        }
+
+        .l{
+            display: inline-block;
+            color: navy;
+            animation: jumpdown 1s infinite;
+        }
+        .e{
+            display: inline-block;
+            color: aqua;
+            animation: jump 1s infinite;
+        }
+        #o{
+            display: inline-block;
+            color: orangered;
+            animation: jump 1s infinite;
+        }
+        #g1{
+            color: red;
+        }
+        @keyframes jumpdown{
+            0%{
+                transform: scaleY(90px);
+                color: cyan;
+                position: relative;
+                top: 10px;
+            }
+            100%{
+                transform: scaleY(10px);
+            }
+
+    </style>
+</head>
+<body>
+    <div class="google">
+        <h1 class="g">g</h1>
+        <h1 id="o">o</h1>
+        <h1 class="o">o</h1>
+        <h1 class="g" id="g1">g</h1>
+        <h1 class="l">l</h1>
+        <h1 class="e">e</h1>
+    </div>
+</body>
+</html>
