@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        #a{
+            width: 800px;
+            height: 500px;
+            background: linear-gradient(90deg, orangered, white,green );
+            /* background-color:skyblue; */
+            border: 5px;
+            position: relative;
+            /* left: 400px; */
+            border-radius: 20px;
+        }
+        h1{
+            text-shadow: 2px 2px 2px red,2px -2px 2px red,-2px 2px 2px red,-2px -2px 2px red;
+        }
+        #b{
+            height: 300px;
+            width: 300px;
+            background-color: navy;
+            border: 3px;
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            border-radius: 20px;
+
+        }
+        #c{
+            height: 400px;
+            width: 400px;
+            background-image: url(../images/istockphoto-1288844330-170667a.webp);
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        input{
+            background-color: rgba(128, 128, 128, 0.009);
+            color: blue;
+            font-size: 15px;
+            font-weight: 600;
+            border-color: yellow;
+        }
+        #form{
+            height: 500px;
+            width: 400px;
+            /* background-color: beige; */
+            position: absolute;
+            left: 850px;
+            top: 30px;
+        }
+        label{
+            color: cyan;
+        }
+        #nam,#pho,#ema,#conf,#passs{
+            position: relative;
+            top: -5px;
+            left: -80px;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="a">
+        <h1>😎😎😎😎😎WELCOME TO EXAM 😎😎😎😎😎</h1>
+    </div>
+    <div id="b">
+
+    </div>
+    <div id="c">
+        <label for="name">NAME</label>
+        <input type="text" id="name">
+        <p id="nam"></p>
+        <label for="phone">PHONE</label>
+        <input type="tel" id="phone">
+        <p id="pho"></p>
+        <label for="email">EMAIL</label>
+        <input type="text" id="email">
+        <p id="ema"></p>
+        <label for="pass">PASSWORD</label>
+        <input type="password" id="pass">
+        <label for="confirm">CONFIRM PASSWORD</label>
+        <p id="passs"></p>
+        <input type="password" id="confirm">
+        <p id="conf"></p>
+        <button onclick="details()">submit</button>
+    </div>
+    <div id="form">
+        <p id="na"></p>
+        <p id="ph"></p>
+        <p id="em"></p>
+        <p id="con"></p>
+    </div>
+
+    <script>
+        function details()
+        {
+            let name1=document.getElementById("name").value;
+            if(name1.length>3 && name1.length<10)
+            {
+                localStorage.setItem("NAME",name1)
+                let name2=localStorage.getItem("NAME")
+                document.getElementById("na").innerHTML=`the name is ${name2}`
+                document.getElementById("name").style.borderColor=`green`
+            }
+            else
+            {
+                document.getElementById("nam").innerHTML=`invalid name`
+                document.getElementById("name").style.borderColor=`red`
+                document.getElementById("nam").style.color=`red`
+            }
+            if(name1=="")
+            {
+                document.getElementById("nam").innerHTML=`don't leave empty`
+                document.getElementById("name").style.borderColor=`red`
+                document.getElementById("nam").style.color=`red`
+            }
+
+            let phone1=document.getElementById("phone").value;
+            if(phone1.length==10)
+            {
+                localStorage.setItem("PHONE",phone1)
+                let phone2=localStorage.getItem("PHONE")
+                document.getElementById("ph").innerHTML=`the phone number is ${phone1}`
+                document.getElementById("phone").style.borderColor=`green`
+            }
+            else
+            {
+                document.getElementById("pho").innerHTML=`invalid phone number`
+                document.getElementById("phone").style.borderColor=`red`
+                document.getElementById("pho").style.color=`red`
+            }
+            if(phone1=="")
+            {
+                document.getElementById("pho").innerHTML=`don't leave empty`
+                document.getElementById("name").style.borderColor=`red`
+                document.getElementById("pho").style.color=`red`
+            }
+
+            let email1=document.getElementById("email").value;
+            if(email1.includes("@"))
+            {
+                sessionStorage.setItem("EMAIL",email1)
+                let email2=sessionStorage.getItem("EMAIL")
+                document.getElementById("em").innerHTML=`the email address is ${email2}`
+                document.getElementById("email").style.borderColor=`green`
+            }
+            else
+            {
+                document.getElementById("ema").innerHTML=`invalid email id`
+                document.getElementById("email").style.borderColor=`red`
+                document.getElementById("ema").style.color=`red`
+            }
+            if(email1=="")
+            {
+                document.getElementById("ema").innerHTML=`don't leave empty`
+                document.getElementById("name").style.borderColor=`red`
+                document.getElementById("ema").style.color=`red`
+            }
+
+            let pass1=document.getElementById("pass").value;
+            let pass2=document.getElementById("confirm").value;
+            if(pass1==pass2) 
+            {
+                if(pass2.length>=8 && pass2.length<=16)
+                {
+                localStorage.setItem("PASSWORD",pass2)
+                let pass3=localStorage.getItem("PASSWORD")
+                document.getElementById("con").innerHTML=`confirmed password is ${pass3}`
+                document.getElementById("confirm").style.borderColor=`green`
+                }
+                else
+                {
+                    document.getElementById("conf").innerHTML=`the password must be in 8-16 characters`
+                    document.getElementById("confirm").style.borderColor=`red`
+                    document.getElementById("conf").style.color=`red`
+                }
+            }
+            else
+            {
+                document.getElementById("conf").innerHTML=`password doesnot match`
+                document.getElementById("confirm").style.borderColor=`red`
+                document.getElementById("conf").style.color=`red` 
+            }
+            if(pass1=="")
+            {
+                document.getElementById("passs").innerHTML=`don't leave empty`
+                document.getElementById("name").style.borderColor=`red`
+                document.getElementById("passs").style.color=`red`
+            }
+            if(pass1=="")
+            {
+                document.getElementById("conf").innerHTML=`don't leave empty`
+                document.getElementById("name").style.borderColor=`red`
+                document.getElementById("conf").style.color=`red`
+            }
+        }
+
+    </script>
+</body>
+</html>
