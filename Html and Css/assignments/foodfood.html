@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+        }
+        #div1{
+            width: 100%;
+            height: 80px;
+            background-color: brown;
+        }
+        #logo{
+            height: 60px;
+            width: 100px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+        nav{
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            padding: 10px;
+            height: 30px;
+            color: black;
+        }
+        nav a{
+            padding: 10px 20px;
+            /* font-size: 30px; */
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+        }
+        select{
+            border: 0px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        #main{
+            width: 100%;
+            height: 70vh;
+        }
+        #mainimg{
+            width: 100%;
+            height: 70vh;
+        }
+        .subdiv{
+            height: 150px;
+            width: 25%;
+            float: left;
+            color: whitesmoke;
+            font-style: italic;
+            font-weight:600;
+            /* padding-top: 40px; */
+        }
+        #l1{
+            background-color: cyan;
+        }
+        #l2{
+            background-color: greenyellow;
+        }
+        #l3{
+            background-color: chocolate;
+        }
+        #l4{
+            background-color: darkred;
+        }
+        .subimg{
+            height: 70px;
+            width: 70px;
+            position: relative;
+            top: 25px;
+            left: 100px;
+        }
+        .subimg:hover{
+            position: relative;
+            top: -5px;
+            transition:40ms;
+        }
+        span{
+            position: relative;
+            top: 60px;
+            left: 30px;
+            font-size: 25px;
+        }
+        #sub2{
+            height: 300px;
+            width: 100%;
+            background-color: white;
+            float: right;
+        }
+        small{
+            font-size: 30px;
+            position: relative;
+            top: 10px;
+            left: 30px;
+        }
+        .text{
+            height: 50px;
+            width: 200px;
+            float: left;
+            border: 2px;
+            margin: 2px;
+            font-weight: 600;
+            padding: 5px;
+            background-color:rgba(128, 128, 128, 0.267);
+        }
+        big{
+            position: relative;
+            top: 15px;
+            left: 30px;
+            /* background-color: aquamarine; */
+        }
+        .text:hover
+        {
+            background-color: red;
+            color: white;
+        }
+        #btn1{
+            position: relative;
+            top: -250px;
+            font-size: 50px;
+            border-radius: 50%;
+        }
+        #btn2{
+            position:relative;
+            top: -250px;
+            left: 1150px;
+            font-size: 50px;
+            border-radius: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <img src="https://www.foodfood.com/assets/images/logo/logo.png" alt="" id="logo">
+    </div>
+    <nav>
+        <a href="">HOME</a>
+        <a href="">
+            <select name="" id="">
+                <option value="">CHEFS</option>
+                <option value="">akj</option>
+                <option value="">kjf</option>
+                <option value="">jh</option>
+                <option value="">jhf</option>
+            </select>
+        </a>
+        <a href="">
+            <select name="" id="">
+                <option value="">SHOWS</option>
+                <option value="">akj</option>
+                <option value="">kjf</option>
+                <option value="">jh</option>
+                <option value="">jhf</option> 
+            </select>
+        </a>
+        <a href="">
+            <select name="" id="">
+                <option value="">RECEIPES</option>
+                <option value="">akj</option>
+                <option value="">kjf</option>
+                <option value="">jh</option>
+                <option value="">jhf</option> 
+            </select>
+        </a>
+        <a href="">
+            <select name="" id="">
+                <option value="">VIDEOS</option>
+                <option value="">akj</option>
+                <option value="">kjf</option>
+                <option value="">jh</option>
+                <option value="">jhf</option> 
+            </select>
+        </a>
+        <a href="">
+            <select name="" id="">
+                <option value="">FOOD JOURNAL</option>
+                <option value="">akj</option>
+                <option value="">kjf</option>
+                <option value="">jh</option>
+                <option value="">jhf</option> 
+            </select>
+        </a>
+        <a href="">BLOG</a>
+        <a href="">ABOUT US</a>
+        <a href="">CONTACT US</a>
+        <a href="">SIGN IN</a>
+    </nav>
+    <div id="main">
+        <img src="https://www.foodfood.com/images/banner/Cook-Smart_M.png" alt="" id="mainimg">
+        <button id="btn1" onclick="demo()"> < </button>
+        <button id="btn2" onclick="demo1()"> > </button>
+    </div>
+    <div id="l1" class="subdiv"><img src="https://www.foodfood.com/assets/images/cuisine.png" alt="" class="subimg"><span>Cusine</span></div>
+    <div id="l2" class="subdiv"><img src="https://www.foodfood.com/assets/images/ingredience.png" alt="" class="subimg"><span>Ingredients</span></div>
+    <div id="l3" class="subdiv"><img src="https://www.foodfood.com/assets/images/meal-&-course.png" alt="" class="subimg"><span>Meal</span></div>
+    <div id="l4" class="subdiv"><img src="https://www.foodfood.com/assets/images/chef.png" alt="" class="subimg"><span>Occasion</span></div>
+
+    <div id="sub2">
+        <small style="color: red;">Re</small><small>cipe</small><br><br>
+        <div class="text"><big>Snack Receipes</big></div>
+        <div class="text"><big>By Sangeev Kapoor</big></div>
+        <div class="text"><big>Mummy Ka Magic</big></div>
+        <div class="text"><big>Healthy Receipes</big></div>
+    </div>
+
+    <script>
+        let arr=["https://fdstatic.foodfood.com/odd/images/30BbbTFoodFood-Chefs.jpg","https://fdstatic.foodfood.com/odd/images/rqM1JYChefs-Rasoi.jpg","https://www.foodfood.com/images/banner/Cook-Smart_D.png","https://fdstatic.foodfood.com/odd/images/OVJk5NBake-Diaries-mob.jpg"]
+        let i=0
+        function demo()
+        {
+            mainimg.src=arr[i]
+            i++
+            if(i==arr.length)
+            {
+                i=0
+            }
+        }
+
+        let j=arr.length
+        function demo1()
+        {
+            mainimg.src=arr[j]
+            j--
+            if(j==0)
+            {
+                j=arr.length
+            }
+        }
+        let arr2=["https://fdstatic.foodfood.com/odd/images/Badam-Chocolate-Roll-46515656561.jpg","https://fdstatic.foodfood.com/odd/images/Lemon-Grass-Chilli-Pot-De-Creme-12.jpg","https://fdstatic.foodfood.com/odd/images/PRHMM105902-01.jpg","https://fdstatic.foodfood.com/odd/images/4.1-Soya-keema-burger561.jpg","https://fdstatic.foodfood.com/odd/images/PRFIR104003-01.jpg","https://fdstatic.foodfood.com/odd/images/Chakundar-ki-tikki.jpg"]
+    </script>
+</body>
+</html>

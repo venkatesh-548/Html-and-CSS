@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
+
+        }
+        .a{
+            font-size: 40px;
+            text-align: center;
+            padding: 50px;
+        }
+        .b{
+            font-size: 40px;
+            text-align: center;
+            padding: 40px;
+        }
+        header{
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        #sec1{
+            background-color: brown;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #sec2{
+            background-color: blue;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #sec3{
+            background-color: rgb(255, 0, 200);
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        aside{
+            background-color: aquamarine;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            
+        }
+        main{
+            background-color: chocolate;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        footer{
+            background-color: black;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <header class="a">HEADER</header>
+    <section id="sec1" class="b">SECTION</section>
+    <section id="sec2" class="b">SECTION</section>
+    <section id="sec3" class="b">SECTION</section>
+    <aside class="a">ASIDE</aside>
+    <main class="a">MAIN</main>
+    <footer class="a">FOOTER</footer>
+</body>
+</html>

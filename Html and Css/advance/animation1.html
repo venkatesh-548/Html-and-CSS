@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            height: 300px;
+            width: 100%;
+            background-color: aqua;
+            animation: slide 10s infinite alternate-reverse;
+        }
+        @keyframes slide{
+            0%{
+                background-image: url(../images/istockphoto1.jpg);
+                height: 300px;
+                width: 100%;
+                /* transform: rotateX(45deg); */
+                transform: translateX(0%);
+            }
+            30%{
+                background-image: url(../images/istockphoto5.jpg);
+                height: 300px;
+                width: 100%;
+                transform: translateX(30%);
+            }
+            60%{
+                background-image: url(../images/istockphoto3.jpg);
+                height: 300px;
+                width: 100%;
+                transform: translateX(50%);
+            }
+            100%{
+                background-image: url(../images/istockphoto4.jpg);
+                height: 300px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+</body>
+</html>

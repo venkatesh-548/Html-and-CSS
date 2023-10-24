@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            border: 4px dotted yellow;
+            animation-name: rotate;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            /* animation: rotate 10s 5s 2 alternate-reverse; */
+            position: relative;
+        }
+        @keyframes rotate{
+            0%{
+                background-color: black;
+                border-radius: 0px;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: aquamarine;
+                border-radius: 25%;
+                left: 400px;
+                top: 0px;
+            }
+            50%{
+                background-color: bisque;
+                border-radius: 50%;
+                left: 400px;
+                top: 400px;
+            }
+            70%{
+                background-color: brown;
+                border-radius: 75%;
+                left: 0px;
+                top: 400px;
+            }
+            100%{
+                background-color: chocolate;
+                border-radius: 100%;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>
