@@ -1,0 +1,16 @@
+#navi{
+    height: 80px;
+    width: 100vw;
+    background-color: brown;
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav a{
+    padding: 60px;
+    text-decoration: none;
+    margin-left: 0px;
+}
+

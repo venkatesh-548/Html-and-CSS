@@ -1,0 +1,45 @@
+
+#main{
+    height: 95vh;
+    width: 96%;
+    background-color: navy;
+    border-left: 25px solid red ;
+    border-bottom: 25px solid red;
+    border-right: 25px solid red;
+    border-top: 25px solid navy;
+}
+h1,h2{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+p{
+    text-align: center;
+    color: white;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+}
+#p2{
+    padding-bottom: 10px;
+}
+input{
+    text-align: center;
+    position: relative;
+    left: 500px;
+}
+label{
+    padding-left: 500px;
+    color: white;
+}
+button{
+    border-radius: 10%;
+    background-color: yellow;
+    position: relative;
+    left: 500px;
+    padding: 10px;
+    font-size: 20px;
+}
+    
