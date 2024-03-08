@@ -1,0 +1,7 @@
+body{
+    background: url(https://scontent.fbpm6-1.fna.fbcdn.net/v/t39.30808-1/249358984_1204232286649694_2748953299149898950_n.jpg?stp=cp0_dst-jpg_e15_q65_s120x120&_nc_cat=105&ccb=1-7&_nc_sid=4da83f&_nc_ohc=OpCkKQ8K5-gAX_hYmXI&_nc_ht=scontent.fbpm6-1.fna&oh=00_AfCouK8NHGTbNFzTBxFLLXyrtw_hXWluh30X9aDoRdGh5g&oe=65EB3EC5),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ5vwofeRr-u30n8Nv5YLq3Uf-qdSmo9wqteB1aJLtd45a3SgU);
+
+    background-repeat: no-repeat;
+    background-size: 100px,cover;
+    background-position: 50px -200px,0px;
+}

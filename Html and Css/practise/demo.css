@@ -1,0 +1,7 @@
+body{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxGv8C_iaADEq65yv0_HBE1klXOWNFyMZuPCqMmZp9fQXi8o9),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxGv8C_iaADEq65yv0_HBE1klXOWNFyMZuPCqMmZp9fQXi8o9);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: 200px 200px,200px 400px ;
+    background-attachment: fixed, scroll;
+}
